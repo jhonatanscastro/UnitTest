@@ -6,8 +6,11 @@ public class LeapDay {
         if (year % 4 != 0) {
             return "Common Year";
         }
-        else
+        if (year % 100 != 0) {
             return "Leap Year";
+        }
+        return "Leap Year";
+
 
     }
 }
