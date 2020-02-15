@@ -7,7 +7,7 @@ public class LeapDay {
             return "Common Year";
         }
         else
-            return "Leap Day";
+            return "Leap Year";
 
     }
 }
