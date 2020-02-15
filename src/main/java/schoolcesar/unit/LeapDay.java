@@ -1,16 +1,16 @@
 package schoolcesar.unit;
 
 public class LeapDay {
-
-    public static String calculate(int year) {
-        if (year % 4 != 0) {
-            return "Common Year";
+    public static Boolean calculateYear (int year) {
+            if (year % 4 == 0) {
+                if (year % 100 == 0) {
+                    if (year % 400 == 0) {
+                        return true;
+                    }
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
-        if (year % 100 != 0) {
-            return "Leap Year";
-        }
-        return "Leap Year";
-
-
     }
-}
