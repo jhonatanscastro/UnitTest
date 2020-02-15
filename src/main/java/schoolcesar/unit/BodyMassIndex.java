@@ -9,7 +9,12 @@ public class BodyMassIndex {
         if (bmi<18.5) {
             return "Underweight";
         }
-        return "Healthy Weight";
+        if (bmi<25) {
+            return "Healthy Weight";
+        }
+
+        return "OverWeight";
+
 
     }
 }
