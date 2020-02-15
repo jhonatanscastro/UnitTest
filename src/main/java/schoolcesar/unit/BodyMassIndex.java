@@ -13,7 +13,11 @@ public class BodyMassIndex {
             return "Healthy Weight";
         }
 
-        return "OverWeight";
+        if (bmi<30) {
+            return "OverWeight";
+        }
+
+        return "Obese";
 
 
     }

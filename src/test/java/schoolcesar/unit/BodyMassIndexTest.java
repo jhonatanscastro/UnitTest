@@ -21,8 +21,13 @@ public class BodyMassIndexTest {
     }
 
     @Test
-    public void calculate_bmiBetween18And25Dot5_OverWeight(){
+    public void calculate_bmiBetween25And30Dot5_OverWeight(){
         Assertions.assertEquals("OverWeight", BodyMassIndex.calculate(29.9f));
+    }
+
+    @Test
+    public void calculate_bmi30AndOver_Obese(){
+        Assertions.assertEquals("Obese", BodyMassIndex.calculate(30));
     }
 
 
