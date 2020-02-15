@@ -12,26 +12,22 @@ public class PalindromeTest {
     }
 
     @Test
-    public void
-    palindrome_LengthOne(){
+    public void palindrome_LengthOne(){
         Assertions.assertTrue(Palindrome.check("a"));
     }
 
     @Test
-    public void
-    palindrome_LengthSameStartEnd(){
+    public void palindrome_LengthSameStartEnd(){
         Assertions.assertTrue(Palindrome.check("aa"));
     }
 
     @Test
-    public void
-    palindrome_LengthName(){
+    public void palindrome_LengthName(){
         Assertions.assertFalse(Palindrome.check("xony"));
     }
 
     @Test
-    public void
-    palindrome_LengthName_SameLetter(){
+    public void palindrome_LengthName_SameLetter(){
         Assertions.assertTrue(Palindrome.check("ana"));
     }
 
